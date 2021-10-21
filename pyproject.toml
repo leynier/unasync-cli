@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "unasync-cli"
+version = "0.0.1"
+description = "Command line interface for unasync"
+authors = ["Leynier Gutiérrez González <leynier41@gmail.com>"]
+homepage = "https://github.com/leynier/unasync-cli"
+repository = "https://github.com/leynier/unasync-cli"
+documentation = "https://github.com/leynier/unasync-cli"
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.scripts]
+unasync = "unasync_cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.6.14"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+flake8 = "^4.0.1"
+black = "^21.9b0"
+isort = "^5.9.3"
+unasync = "^0.5.0"
+setuptools = "^58.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
