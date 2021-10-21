@@ -1,5 +1,5 @@
 from distutils.dir_util import copy_tree
-from os import system
+from os import remove, system
 from os.path import exists, join
 from pathlib import Path
 from random import randint
@@ -39,7 +39,7 @@ def run(
     python = "python3"
     if system(f"{python} --version"):
         python = "python"
-    system(f"{python} {build_sync_name}")
+    system(f"{python} {build_sync_name} build")
     folders = [
         folder
         for path in paths
@@ -63,4 +63,4 @@ def run(
     if exists("build"):
         rmtree("build")
     if exists(build_sync_name):
-        rmtree(build_sync_name)
+        remove(build_sync_name)
