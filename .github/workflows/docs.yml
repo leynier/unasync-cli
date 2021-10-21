@@ -12,4 +12,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
+      - run: make update_index
       - run: mkdocs gh-deploy --force
