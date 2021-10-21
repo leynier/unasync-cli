@@ -2,12 +2,23 @@ from distutils.dir_util import copy_tree
 from os import system
 from os.path import exists, join
 from pathlib import Path
+from random import randint
 from shutil import rmtree
 from typing import List
 
 from typer import Argument, Typer
 
 app = Typer()
+
+build_sync_content = """
+from setuptools import find_packages, setup
+from unasync import cmdclass_build_py
+
+setup(
+    packages=find_packages(),
+    cmdclass={"build_py": cmdclass_build_py()},  # type: ignore
+)
+"""
 
 
 @app.command()
@@ -22,7 +33,13 @@ def run(
 ):
     if exists("build"):
         rmtree("build")
-    system(f'python {join("unasync_cli", "build_sync.py")} build')
+    build_sync_name = f"build_sync_{randint(1, 10**6)}.py"
+    with open(build_sync_name, "w") as f:
+        f.write(build_sync_content)
+    python = "python3"
+    if system(f"{python} --version"):
+        python = "python"
+    system(f"{python} {build_sync_name}")
     folders = [
         folder
         for path in paths
@@ -45,3 +62,5 @@ def run(
         copy_tree(source, target)
     if exists("build"):
         rmtree("build")
+    if exists(build_sync_name):
+        rmtree(build_sync_name)
