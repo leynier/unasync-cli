@@ -22,7 +22,7 @@ def run(
 ):
     if exists("build"):
         rmtree("build")
-    system("python build_sync.py build")
+    system(f'python {join("unasync_cli", "build_sync.py")} build')
     folders = [
         folder
         for path in paths
@@ -39,7 +39,6 @@ def run(
         ).glob("**/_sync")
         if folder.is_dir()
     ]
-    print("=====================================", folders)
     for folder in folders:
         source = str(folder)
         target = str(folder).removeprefix(join("build", "lib"))[1:]
