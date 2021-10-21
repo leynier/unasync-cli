@@ -335,7 +335,7 @@ python-versions = "*"
 name = "unasync"
 version = "0.5.0"
 description = "The async transformation code."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 
@@ -354,7 +354,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6.14"
-content-hash = "93aadf9b9fcb91dab89dfd37b66deeec9fab5d450ec7cc6901205970b6761867"
+content-hash = "b4ee5cf157f0c29e336730c0bdfd0df1858a3ab30f6acf8a865cb2bca3702fef"
 
 [metadata.files]
 atomicwrites = [
