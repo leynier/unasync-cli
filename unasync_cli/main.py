@@ -58,7 +58,7 @@ def run(
     ]
     for folder in folders:
         source = str(folder)
-        target = str(folder).removeprefix(join("build", "lib"))[1:]
+        target = str(folder).lstrip(join("build", "lib"))[1:]
         copy_tree(source, target)
     if exists("build"):
         rmtree("build")
