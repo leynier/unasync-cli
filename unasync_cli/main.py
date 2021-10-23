@@ -29,6 +29,8 @@ def run(
         file_okay=False,
         writable=True,
         resolve_path=True,
+        help="The folders where it will check for folders with "
+        "the name _async to generate its equivalent _sync.",
     )
 ):
     if exists("build"):
