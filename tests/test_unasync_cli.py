@@ -1,4 +1,5 @@
 from typer.testing import CliRunner
+
 from unasync_cli.main import app
 
 runner = CliRunner()
