@@ -1,6 +1,5 @@
 # CLI for unasync
 
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Test](https://github.com/leynier/unasync-cli/workflows/CI/badge.svg)](https://github.com/leynier/unasync-cli/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/leynier/unasync-cli/branch/main/graph/badge.svg?token=Z1MEEL3EAB)](https://codecov.io/gh/leynier/unasync-cli)
@@ -16,6 +15,54 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Command line interface for unasync
+
+## Getting started
+
+### Install
+
+Run the following command to install the package with [pip](https://pip.pypa.io):
+
+```bash
+pip install unasync-cli
+```
+
+Or with [conda](https://conda.io):
+
+```bash
+conda install unasync-cli
+```
+
+Or with [poetry](https://python-poetry.org):
+
+```bash
+poetry add unasync-cli --dev
+```
+
+Or any other package manager you prefer.
+
+### Usage
+
+For usage information, run the following command:
+
+```bash
+unasync --help
+```
+
+```txt
+Usage: unasync [OPTIONS] PATHS...
+
+Arguments:
+  PATHS...  The folders where it will check for folders with the name _async
+            to generate its equivalent _sync.  [required]
+
+Options:
+  --install-completion [bash|zsh|fish|powershell|pwsh]
+                                  Install completion for the specified shell.
+  --show-completion [bash|zsh|fish|powershell|pwsh]
+                                  Show completion for the specified shell, to
+                                  copy it or customize the installation.
+  --help                          Show this message and exit.
+```
 
 ## Contributors ✨
 
