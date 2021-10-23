@@ -1,4 +1,7 @@
 # CLI for unasync
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Test](https://github.com/leynier/unasync-cli/workflows/CI/badge.svg)](https://github.com/leynier/unasync-cli/actions?query=workflow%3ACI)
@@ -13,3 +16,23 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/leynier/unasync-cli)](https://github.com/leynier/unasync-cli/graphs/contributors)
 
 Command line interface for unasync
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://leynier.github.io"><img src="https://avatars.githubusercontent.com/u/36774373?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leynier Gutiérrez González</b></sub></a><br /><a href="#maintenance-leynier" title="Maintenance">🚧</a> <a href="https://github.com/leynier/unasync-cli/commits?author=leynier" title="Code">💻</a> <a href="#infra-leynier" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
